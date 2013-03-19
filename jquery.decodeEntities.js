@@ -1,16 +1,6 @@
 'use strict';
 
-(function ($) {
-	var plugin = {
-		'name' : 'decodeEntities',
-		'isStatic' : true,
-		'factory' : function ($) {
-			return function () {
-				return $('<div/>').html(s).text();
-			};
-		}
-	};
-
+(function ($, plugin) {
 	if ($) { // Global jQuery
 		plugin.fn = (plugin.isStatic ? $ : $.fn)[plugin.name] = plugin.factory($);
 	}
@@ -34,4 +24,12 @@
 		*/
 		throw 'jQuery not defined.';
 	}
-})(window.$);
+})(window.$, {
+	'name' : 'decodeEntities',
+	'isStatic' : true,
+	'factory' : function ($) {
+		return function () {
+			return $('<div/>').html(s).text();
+		};
+	}
+});
