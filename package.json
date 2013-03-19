@@ -1,0 +1,28 @@
+{
+	"name": "jquery.decodeEntities",
+	"version": "1.0.0",
+	"description": "Simple jQuery plugin for decoding html entities and returning the results.",
+	"homepage": "https://github.com/michael-lawrence/jquery.decodeEntities",
+	"contributors": [
+		"Michael Lawrence <mike@pandemicode.com> (http://pandemicode.com/)"
+	],
+	"keywords": [
+		"jquery",
+		"decode",
+		"entity"
+	],
+	"main": "./jquery.decodeEntities",
+	"dependencies": {
+		"jquery" : "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/michael-lawrence/jquery.decodeEntities.git"
+	},
+	"bugs": {
+		"url": "https://github.com/michael-lawrence/jquery.decodeEntities/issues"
+	},
+	"licenses" : [
+		{ "type" : "MIT" }
+	]
+}
